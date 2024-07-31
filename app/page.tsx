@@ -3,6 +3,7 @@ import ChildrenTypes from "@/components/2children/ChildrenTypes";
 import AdminInfo from "@/components/3ReusableTypes/AdminInfo";
 import UserInfo from "@/components/3ReusableTypes/UserInfo";
 import Counter from "@/components/4useState/Counter";
+import Form from "@/components/5forms/Form";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
        </ChildrenTypes> */}
        {/* <UserInfo username = "yesu" email="yesu@gmail.com" age={20} location={['ind','ap']}/>
        <AdminInfo username="raju" email="raju@gmail.com" age={22} location={['usa','newYork']} isAdmin={true}/>  */}
-       <Counter />
+       {/* <Counter /> */}
+       <Form />
     </section>
   );
 }
