@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 //1. using props
 // function User(props : {name : string, age : string}) {
@@ -47,6 +47,7 @@ import React from 'react'
 //     age : number
 // }
 
+
 // 4 using inteface
 
 interface userShape{
@@ -54,7 +55,20 @@ interface userShape{
     age : number
 }
 
-function User({name, age} : userShape) {
+// function User({name, age} : userShape) {
+//   return (
+//     <main>
+//       <h1>name : {name}</h1>
+//       <h1>age : {age}</h1>
+//       <pre>{JSON.stringify({age, name},null,2)}</pre>
+//     </main>
+//   )
+// }
+
+
+// 5 using FC
+
+const  User : FC<userShape> =  ({name, age}) => {
   return (
     <main>
       <h1>name : {name}</h1>
@@ -63,5 +77,4 @@ function User({name, age} : userShape) {
     </main>
   )
 }
-
 export default User
