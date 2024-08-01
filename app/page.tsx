@@ -6,7 +6,10 @@ import UserInfo from "@/components/3ReusableTypes/UserInfo";
 import Counter from "@/components/4useState/Counter";
 import ElementWrapper from "@/components/5ElementWrapper/ElementWrapper";
 import Form from "@/components/5forms/Form";
+import Button, { primaryButtonProps, secondaryButtonProps } from "@/components/6TypePredicate/button";
 import Image from "next/image";
+
+
 
 export default function Home() {
   return (
@@ -20,10 +23,12 @@ export default function Home() {
        <AdminInfo username="raju" email="raju@gmail.com" age={22} location={['usa','newYork']} isAdmin={true}/>  */}
        {/* <Counter /> */}
        {/* <Form /> */}
-       <ElementWrapper elementType="div" className={"box"} onClick={()=>alert("U clicked")}>
+       {/* <ElementWrapper elementType="div" className={"box"} onClick={()=>alert("U clicked")}>
             <p>This a element with className box</p>
-       </ElementWrapper>
-        
+       </ElementWrapper> */}
+        <Button {...primaryButtonProps}/>
+        <Button {...secondaryButtonProps}/>
        </section>
   );
 }
+ 
