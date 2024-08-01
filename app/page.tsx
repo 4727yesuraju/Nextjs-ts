@@ -7,6 +7,8 @@ import Counter from "@/components/4useState/Counter";
 import ElementWrapper from "@/components/5ElementWrapper/ElementWrapper";
 import Form from "@/components/5forms/Form";
 import Button, { primaryButtonProps, secondaryButtonProps } from "@/components/6TypePredicate/button";
+import MyComponent from "@/components/7context/MyComponent2";
+import { MyProvider } from "@/components/7context/MyContext2";
 import Image from "next/image";
 
 
@@ -26,8 +28,12 @@ export default function Home() {
        {/* <ElementWrapper elementType="div" className={"box"} onClick={()=>alert("U clicked")}>
             <p>This a element with className box</p>
        </ElementWrapper> */}
-        <Button {...primaryButtonProps}/>
-        <Button {...secondaryButtonProps}/>
+        {/* <Button {...primaryButtonProps}/>
+        <Button {...secondaryButtonProps}/> */}
+
+        <MyProvider>
+          <MyComponent />
+        </MyProvider>
        </section>
   );
 }
