@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-type dataType = {
-    userId : number,
-    id : number,
-    title : string,
-    completed : boolean
-}
+
 
 function USEEFFECT() {
     const [data,setData] = useState< dataType | null>(null);
