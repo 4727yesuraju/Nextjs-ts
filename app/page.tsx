@@ -11,6 +11,7 @@ import MyComponent from "@/components/7context/MyComponent2";
 import { MyProvider } from "@/components/7context/MyContext2";
 import Image from "next/image";
 import Counter1 from "@/components/8useReducer/counter";
+import USEEFFECT from "@/components/9useEffect/USEEFFECT";
 
 
 
@@ -36,7 +37,8 @@ export default function Home() {
           <MyComponent />
         </MyProvider> */}
 
-        <Counter1 />
+        {/* <Counter1 /> */}
+        <USEEFFECT />
        </section>
   );
 }
